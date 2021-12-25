@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio>
+        <source src="./ChristmasSong.mp3" type="audio/mpeg">
+    </audio>
+    <div class="word">
+        <p id="letterHappy">Happy</p>
+        <p id="letterNew">New</p>
+        <p id="letterYear">Year</p>
+        <p id="letter2022">2022</p>
+    </div>
+    <div class="present-layout">
+        <img src="./tree.png" alt="" class="tree" onclick="clickTree()">
+        <img src="./present.png" alt="" id="present1" onclick="clickPresent('letterHappy', 'present1')" >
+        <img src="./present.png" alt="" id="present2" onclick="clickPresent('letterNew', 'present2')">
+        <img src="./present.png" alt="" id="present3" onclick="clickPresent('letterYear', 'present3')">
+        <img src="./present.png" alt="" id="present4" onclick="clickPresent('letter2022', 'present4')">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
